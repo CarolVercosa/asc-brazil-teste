@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+        Cypress.Commands.add('login', (login, senha) => { 
+            cy.get('#login-user').type(login)
+            cy.get('#login-password').type(senha)
+            cy.get('#form-login > :nth-child(3) > .controls > .btn').click()
+            cy.get('#side_home > a').should('contain', 'Home')  
+         })

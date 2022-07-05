@@ -1,8 +1,7 @@
-module.exports = {
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    baseURL: "http://sacnew.ascbrazil.com.br"
-  },
-};
+    baseUrl: 'http://sacnew.ascbrazil.com.br'
+  }
+})

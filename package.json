@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/CarolVercosa/asc-brazil-teste/issues"
   },
-  "homepage": "https://github.com/CarolVercosa/asc-brazil-teste#readme"
+  "homepage": "https://github.com/CarolVercosa/asc-brazil-teste#readme",
+  "dependencies": {
+    "cypress": "^10.3.0",
+    "faker": "^5.5.3"
+  }
 }
